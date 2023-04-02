@@ -15,4 +15,9 @@ dependencyResolutionManagement {
 
 rootProject.name = "Niyama"
 include(":androidApp")
-include(":shared")
+include(":common:auth:api")
+include(":common:auth:presentation")
+include(":common:auth:data")
+include(":common:core")
+include(":common:umbrella-compose")
+include(":common:umbrella-ios")
