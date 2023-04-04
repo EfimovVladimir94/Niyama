@@ -1,9 +1,10 @@
+package ktor
+
 import io.ktor.client.*
 import io.ktor.client.plugins.*
 import io.ktor.client.plugins.contentnegotiation.*
 import io.ktor.serialization.kotlinx.json.*
 import io.ktor.client.plugins.logging.*
-import ktor.HttpEngineFactory
 import org.kodein.di.DI
 import org.kodein.di.bind
 import org.kodein.di.singleton
