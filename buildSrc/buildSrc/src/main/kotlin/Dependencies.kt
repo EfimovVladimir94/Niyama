@@ -20,7 +20,7 @@ object Dependencies {
     }
 
     object Android {
-        const val gradlePlugin = "com.android.tools.build:gradle:7.4.1"
+        const val gradlePlugin = "com.android.tools.build:gradle:7.4.2"
     }
 
     object Kodein {
