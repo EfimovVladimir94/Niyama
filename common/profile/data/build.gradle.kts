@@ -7,6 +7,7 @@ kotlin {
     sourceSets {
         commonMain {
             dependencies {
+                implementation(project(":common:profile:api"))
                 implementation(project(":common:core"))
             }
         }
