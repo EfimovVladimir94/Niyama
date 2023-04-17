@@ -1,3 +1,3 @@
 package platform
 
-expect class PlatformConfiguration constructor()
+expect class PlatformConfiguration

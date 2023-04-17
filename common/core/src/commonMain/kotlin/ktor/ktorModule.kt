@@ -5,6 +5,7 @@ import io.ktor.client.plugins.*
 import io.ktor.client.plugins.contentnegotiation.*
 import io.ktor.serialization.kotlinx.json.*
 import io.ktor.client.plugins.logging.*
+import kotlinx.serialization.json.Json
 import org.kodein.di.DI
 import org.kodein.di.bind
 import org.kodein.di.singleton
@@ -17,17 +18,22 @@ internal val ktorModule = DI.Module("ktorModule") {
                 level = LogLevel.BODY
             }
 
-            install(ContentNegotiation) {
-                json()
-            }
+            install(DefaultRequest)
 
+            install(ContentNegotiation) {
+                json(Json {
+                    prettyPrint = true
+                    ignoreUnknownKeys = true
+                    isLenient = true
+                })
+            }
             install(HttpTimeout) {
                 connectTimeoutMillis = 15000
                 requestTimeoutMillis = 30000
             }
 
             defaultRequest {
-                url("http://localhost:8080/")
+                url("http://10.0.2.2:8080/")
             }
         }
     }

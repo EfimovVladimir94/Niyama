@@ -5,4 +5,8 @@ class ProfileRepositoryImpl(private val ktorProfileDataSource: KtorProfileDataSo
     override suspend fun fetchProfileDetails(): Profile {
         return ktorProfileDataSource.fetchProfileDetails()
     }
+
+    override suspend fun login() {
+        ktorProfileDataSource.login()
+    }
 }

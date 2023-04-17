@@ -3,14 +3,14 @@ plugins {
     id("android-setup")
 }
 
-//kotlin {
-//    sourceSets {
-//        commonMain {
-//            dependencies {
-//                implementation(project(":common:core"))
-//                implementation(project(":common:auth:data"))
-//                implementation(project(":common:profile:data"))
-//            }
-//        }
-//    }
-//}
+kotlin {
+    sourceSets {
+        commonMain {
+            dependencies {
+                implementation(project(":common:core"))
+//                implementation(project(":common:auth:data")
+                implementation(project(":common:profile:data"))
+            }
+        }
+    }
+}
