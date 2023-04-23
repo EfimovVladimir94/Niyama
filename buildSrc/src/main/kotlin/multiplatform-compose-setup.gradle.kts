@@ -15,5 +15,13 @@ kotlin {
                 implementation(compose.material)
             }
         }
+
+        named("androidMain") {
+            dependencies {
+                implementation(Dependencies.Android.Compose.ui)
+                implementation(Dependencies.Android.Compose.material)
+                implementation(Dependencies.Android.Compose.icons)
+            }
+        }
     }
 }

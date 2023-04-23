@@ -4,7 +4,7 @@ import io.ktor.client.*
 import io.ktor.client.call.*
 import io.ktor.client.request.*
 import io.ktor.http.*
-import ktor.models.KtorLoginDetails
+import ktor.models.KtorAuthorization
 import models.Profile
 
 class KtorProfileDataSource(private val httpClient: HttpClient) {
@@ -17,7 +17,7 @@ class KtorProfileDataSource(private val httpClient: HttpClient) {
             header("Content-Type", "application/json")
             url {
                 path("/api/v1/auth/login")
-                setBody(KtorLoginDetails("test@mail.ru", "test@mail.ru"))
+                setBody(KtorAuthorization("test@mail.ru", "test@mail.ru"))
             }
         }.body()
     }
