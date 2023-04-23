@@ -42,4 +42,5 @@ dependencies {
     implementation(project(":common:core"))
     implementation(project(":common:profile:api"))
     implementation(project(":common:umbrella-compose"))
+    implementation(Dependencies.Android.composeActivity)
 }

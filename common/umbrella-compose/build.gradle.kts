@@ -21,10 +21,10 @@ kotlin {
             }
         }
 
-//        androidMain {
-//            dependencies {
-//                implementation(Dependencies.Android.composeActivity)
-//            }
-//        }
+        androidMain {
+            dependencies {
+                implementation(Dependencies.Android.composeActivity)
+            }
+        }
     }
 }
