@@ -20,7 +20,8 @@ object PlatformSDK {
                 importAll(
                     umbrellaModule,
                     coreModule,
-                    profileModule
+                    profileModule,
+                    authModule
                 )
             }.direct
         )
