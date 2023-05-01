@@ -1,11 +1,13 @@
 import SwiftUI
-import shared
+import SharedSDK
 
 struct ContentView: View {
-	let greet = Greeting().greet()
 
+//    init() {
+//        let platform = Authoriza
+//    }
 	var body: some View {
-		Text(greet)
+		Text("greet")
 	}
 }
 
