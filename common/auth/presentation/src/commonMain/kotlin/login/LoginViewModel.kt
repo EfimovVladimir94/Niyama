@@ -15,6 +15,7 @@ class LoginViewModel: BaseSharedViewModel<LoginViewState, LoginAction, LoginEven
     private val authRepository: AuthRepository = Inject.instance()
 
     override fun obtainEvent(viewEvent: LoginEvent) {
+        println("Event coming $viewEvent")
         when (viewEvent) {
             is LoginEvent.LoginClick -> sendLogin()
             is LoginEvent.EmailChanged -> obtainEmailChanged(viewEvent.value)
