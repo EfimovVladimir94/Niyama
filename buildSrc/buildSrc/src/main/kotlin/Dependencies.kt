@@ -5,7 +5,7 @@ object Dependencies {
 
         object Serialization {
             const val gradlePlugin = "org.jetbrains.kotlin:kotlin-serialization:1.6.0"
-            const val serialization = "org.jetbrains.kotlinx:kotlinx-serialization-core:1.5.0"
+            const val serialization = "org.jetbrains.kotlinx:kotlinx-serialization-core:1.3.0"
         }
 
         object Coroutines {
