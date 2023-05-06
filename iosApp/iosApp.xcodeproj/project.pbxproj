@@ -13,6 +13,10 @@
 		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
 		E7A7329329FFF35F0082343C /* CstTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A7329229FFF35F0082343C /* CstTextField.swift */; };
 		E7A7329829FFF3E00082343C /* View+placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A7329729FFF3A20082343C /* View+placeholder.swift */; };
+		E7BB7E3C2A0613950063A198 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BB7E3B2A0613950063A198 /* LoginView.swift */; };
+		E7BB7E3E2A0616D20063A198 /* Flow+Publisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BB7E3D2A0616D20063A198 /* Flow+Publisher.swift */; };
+		E7BB7E402A0618920063A198 /* ViewModel+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BB7E3F2A0618920063A198 /* ViewModel+View.swift */; };
+		E7BB7E422A061D150063A198 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BB7E412A061D150063A198 /* LoginScreen.swift */; };
 		FF810365AC45DB1D2CA796B1 /* Pods_iosApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A88D6E46BA027D7AFD90ED1 /* Pods_iosApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +31,10 @@
 		9A88D6E46BA027D7AFD90ED1 /* Pods_iosApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iosApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7A7329229FFF35F0082343C /* CstTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CstTextField.swift; sourceTree = "<group>"; };
 		E7A7329729FFF3A20082343C /* View+placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+placeholder.swift"; sourceTree = "<group>"; };
+		E7BB7E3B2A0613950063A198 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E7BB7E3D2A0616D20063A198 /* Flow+Publisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Flow+Publisher.swift"; sourceTree = "<group>"; };
+		E7BB7E3F2A0618920063A198 /* ViewModel+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModel+View.swift"; sourceTree = "<group>"; };
+		E7BB7E412A061D150063A198 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		EB530A8FBB88E38CC1A6A5CF /* Pods-iosApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosApp.release.xcconfig"; path = "Target Support Files/Pods-iosApp/Pods-iosApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				7555FF82242A565900829871 /* ContentView.swift */,
+				E7BB7E3B2A0613950063A198 /* LoginView.swift */,
+				E7BB7E412A061D150063A198 /* LoginScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -118,6 +128,8 @@
 		E7A7329629FFF39A0082343C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				E7BB7E3D2A0616D20063A198 /* Flow+Publisher.swift */,
+				E7BB7E3F2A0618920063A198 /* ViewModel+View.swift */,
 				E7A7329729FFF3A20082343C /* View+placeholder.swift */,
 			);
 			path = Extensions;
@@ -239,8 +251,12 @@
 			files = (
 				E7A7329329FFF35F0082343C /* CstTextField.swift in Sources */,
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
+				E7BB7E3E2A0616D20063A198 /* Flow+Publisher.swift in Sources */,
 				E7A7329829FFF3E00082343C /* View+placeholder.swift in Sources */,
+				E7BB7E3C2A0613950063A198 /* LoginView.swift in Sources */,
+				E7BB7E422A061D150063A198 /* LoginScreen.swift in Sources */,
 				7555FF83242A565900829871 /* ContentView.swift in Sources */,
+				E7BB7E402A0618920063A198 /* ViewModel+View.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +392,7 @@
 				DEVELOPMENT_TEAM = 2538RJ4823;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iosApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -399,6 +416,7 @@
 				DEVELOPMENT_TEAM = 2538RJ4823;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iosApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
