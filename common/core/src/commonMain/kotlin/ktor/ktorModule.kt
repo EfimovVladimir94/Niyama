@@ -33,7 +33,8 @@ internal val ktorModule = DI.Module("ktorModule") {
             }
 
             defaultRequest {
-                url("https://mobile-study-java.simbirsoft.dev/")
+                url("http://10.0.2.2:8080/")
+//                url("https://mobile-study-java.simbirsoft.dev/")
             }
         }
     }

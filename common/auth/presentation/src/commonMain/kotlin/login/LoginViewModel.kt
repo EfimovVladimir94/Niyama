@@ -71,7 +71,7 @@ class LoginViewModel: BaseSharedViewModel<LoginViewState, LoginAction, LoginEven
                     viewState = viewState.copy(isSending = false)
                 }
             } catch (e: Exception) {
-                viewState.copy(isSending = false)
+                viewState = viewState.copy(isSending = false)
             }
         }
     }
