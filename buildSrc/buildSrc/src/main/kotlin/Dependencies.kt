@@ -1,4 +1,10 @@
 object Dependencies {
+
+    object Settings {
+        const val core = "com.russhwolf:multiplatform-settings:1.0.0"
+        const val noarg = "com.russhwolf:multiplatform-settings-no-arg:1.0.0"
+    }
+
     object Kotlin {
         private const val version = "1.8.0"
         const val gradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:$version"

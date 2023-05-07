@@ -11,6 +11,7 @@ kotlin {
                 implementation(project(":common:core"))
                 implementation(project(":common:auth:api"))
                 implementation(Dependencies.Kodein.core)
+                implementation(Dependencies.Settings.core)
             }
         }
     }
