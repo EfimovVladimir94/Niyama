@@ -1,5 +1,6 @@
 import ktor.KtorAuthDataSource
 import org.kodein.di.*
+import settings.SettingsAuthDataSource
 
 val authModule = DI.Module("authModule") {
     bind<KtorAuthDataSource>() with provider {
@@ -7,6 +8,10 @@ val authModule = DI.Module("authModule") {
     }
 
     bind<AuthRepository>() with singleton {
-        AuthRepositoryImpl(instance())
+        AuthRepositoryImpl(instance(), instance())
+    }
+
+    bind<SettingsAuthDataSource>() with provider {
+        SettingsAuthDataSource(instance())
     }
 }
